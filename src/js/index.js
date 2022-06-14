@@ -5,7 +5,7 @@ let dataset = [];
 let x;
 let y;
 
-let svg = d3.select('body').append('svg').attr('width', w).attr('height', h);
+let svg = d3.select('svg');
 
 let densityToRadius = d3.scaleSqrt().domain([0, 2.5e6]).range([1, 100]);
 
