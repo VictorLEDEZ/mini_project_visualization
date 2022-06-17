@@ -8,28 +8,39 @@
   </head>
   <body>
     <h1>Mini Project Data Visualization</h1>
-    <form id="form" role="search">
-      <input
-        type="search"
-        id="query"
-        name="q"
-        placeholder="Search..."
-        aria-label="Search through site content"
-      />
+    <form>
+      <input type="search" placeholder="Search..." />
       <button>Search</button>
     </form>
 
     <h2>3 MOST POPULAR NAMES</h2>
-    <button></button>
-    <button></button>
-    <button></button>
+    <button>1</button>
+    <button>1</button>
+    <button>1</button>
 
     <h2>3 MOST POPULAR NON-BINARY NAMES</h2>
-    <button></button>
-    <button></button>
-    <button></button>
+    <button>1</button>
+    <button>1</button>
+    <button>1</button>
+
+    <br />
+    <div id="textYear">Year: 1910</div>
+    <br />
+    <input
+      type="range"
+      min="1900"
+      max="2019"
+      step="1"
+      value="1910"
+      oninput="changeYear(this.value)"
+      onchange="changeYear(this.value)"
+      onload="changeYear(this.value)"
+    />
+
+    <br />
 
     <svg width="600" height="600"></svg>
+
     <script src="js/index.js"></script>
   </body>
 </html>
